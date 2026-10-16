@@ -1,4 +1,4 @@
 Application Name: DevOps Practice
-Version: 3.0
+Version: 2.0
 Environment: Development
 Logging: Enabled
