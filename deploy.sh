@@ -1,4 +1,11 @@
 #!/bin/bash
 
+APP_NAME="devops-demo"
+APP_VERSION="1.1.0"
+
 echo "Starting deployment..."
-echo "Application deployed successfully."
+echo "Application: $APP_NAME"
+echo "Version: $APP_VERSION"
+echo "Deployment completed successfully."
+echo "Deployment started at $(date)"
+echo "Deployment log: deployment.log"

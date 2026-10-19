@@ -1,0 +1,28 @@
+
+name: Feature Deployment CI
+
+on:
+  push:
+    branches:
+      - feature-deployment
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Test Deployment Project
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check Bash script syntax
+        run: bash -n deploy.sh
+
+      - name: Check configuration file
+        run: test -f config/app.conf
+
+      - name: Run deployment practice script
+        run: bash deploy.sh
