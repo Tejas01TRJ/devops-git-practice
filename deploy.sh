@@ -1,7 +1,7 @@
 #!/bin/bash
 
 APP_NAME="devops-demo"
-APP_VERSION="1.0.0"
+APP_VERSION="1.1.0"
 
 echo "Starting deployment..."
 echo "Application: $APP_NAME"
